@@ -1,5 +1,4 @@
 from math import *
-f = input("Назовите свою фигуру: ")
 def pl():
     if f == "Квадрат":
         znach = float(input("Сторона квадрата: "))
@@ -14,7 +13,7 @@ def pl():
         znach2 = float(input("Катет 2: "))
         p = (1/2)*(znach*znach2)
         print(p)
-pl()
+pl(str(input("Название фигуры: "))
 
 
 import random
@@ -85,12 +84,9 @@ else:
     print("Гипотенуза первого треугольника больше" if c1 > c2 else "Гипотенуза второго треугольника больше")
 
 #N2
-from itertools import accumulate
+def sString(str):
+    return '-'.join(sorted(str))
 
 
-def sort(str):
-    return tuple(accumulate(sorted(str)))[-1]
-
-
-str = input("Введите строку: ")
-print(sort(str))
+str = input()
+print(sortString(str))
